@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/spyfamily"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"></ImageView>
+
+        <EditText
+            android:id="@+id/edit_Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/app_logo"
+            android:layout_marginTop="20dp"
+            android:hint="Name:"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <EditText
+            android:id="@+id/edit_Email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/edit_Name"
+            android:layout_marginTop="20dp"
+            android:hint="Email:"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_Password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/edit_Email"
+            android:layout_marginTop="20dp"
+            android:hint="Password:"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/buttonsignup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/darkgreen"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
